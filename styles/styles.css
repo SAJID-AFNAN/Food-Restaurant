@@ -150,6 +150,7 @@
 #social-box {
     height: 460px;
     margin-top: 42px;
+    margin-bottom: 120px;
 }
 
 .social-content {
@@ -207,4 +208,52 @@
     width: 35px;
     height: 35px;
     border-radius: 20px;
+}
+
+/* footer {
+    height: 430px;
+    background: rgba(236, 239, 236, 0.577);
+    background-image: url('/assets/social-bg.png');
+    background-size: cover;
+    opacity: 0.4;
+} */
+footer {
+    height: 440px;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    /* border: 2px solid black; */
+}
+
+footer::before {
+    content: '';
+    background-image: url('/assets/social-bg.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+footer .social-title {
+    width: 100%;
+}
+
+footer .social-title .title {
+    opacity: 1;
+
+}
+
+footer .social-title .follow {
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    opacity: 0.7;
+    margin-bottom: 20px;
 }
